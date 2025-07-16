@@ -1,0 +1,200 @@
+body {
+  color: blue;
+  background-color: lavdenderblush;
+  z-index: 0;
+  /*overflow: hidden;*/
+}
+
+#field {
+  z-index: 5;
+  cursor: default;
+  overflow: hidden;
+  display: inline-block;
+  background: linear-gradient(to bottom, salmon, pink, lavender, azure);
+  border-radius: 10px;
+}
+
+/*--------player---*/
+#player1 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background-color: blue;
+  cursor: none;
+  border-radius: 50%;
+  z-index: 4;
+  background-image: url("../img/Ayyy_pepe.png");
+}
+
+.foe {
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  z-index: 4;
+  box-shadow: 0 0 20px #fff;
+}
+
+.food {
+  background-color: teal;
+  position: absolute;
+  top: 300px;
+  left: 45px;
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.eaten {
+  background-color: white;
+}
+
+#rarePepe {
+  background-color: grey;
+  background-image: url("../img/rainy_pepe.gif");
+  background-repeat: no-repeat;
+}
+
+#points {
+  position: relative;
+  font-family: sans-serif;
+  color: #693030;
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#pointn {
+  font-size: 30px;
+  font-family: "Comic", cursive;
+  color: LightSeaGreen;
+}
+
+#high-points {
+  color: #693030;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.gameOver {
+  background-image: url("../img/sadpepe.png");
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: right;
+  position: relative;
+  margin: 0 auto;
+  z-index: 100;
+  color: white;
+  text-shadow: 2px 2px darkgray;
+  font-size: 50px;
+  width: 900px;
+  height: 500px;
+  display: inline-block;
+  line-height: 500px;
+}
+
+#angryPepe {
+  background-image: url("../img/Angry_Pepe.jpg");
+}
+
+/*-----UI -------*/
+
+#quit-button {
+  z-index: 1000;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  background-color: firebrick;
+  line-height: 50px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+#quit-button:hover {
+  z-index: 1000;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  background-color: #971d1d;
+  line-height: 50px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+#start-button {
+  z-index: 1000;
+  color: white;
+  text-align: center;
+
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+#start-button:hover {
+  z-index: 1000;
+  color: white;
+  text-align: center;
+  margin-bottom: 2px;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #7aca7a;
+  border-radius: 5px;
+}
+
+#control {
+  display: inline-block;
+  vertical-align: top;
+  font-family: sans-serif;
+  margin-left: 20px;
+}
+
+#container {
+  /*padding: 100px;*/
+}
+
+#title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block;
+  color: #594b76;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: helvetica, sans-serif;
+}
+
+#music {
+  margin-top: 2px;
+  color: black;
+  height: 100px;
+  width: 100px;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+#soundon,
+#soundoff {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.soundcolor {
+  fill: salmon;
+  stroke: salmon;
+}
